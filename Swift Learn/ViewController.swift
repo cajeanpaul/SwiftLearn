@@ -25,7 +25,7 @@ var buttonCount = 0
             myLabelChallenge.text = "You hit it more than 10 Times!"
            }
         if buttonCount >= 15 {
-            view.backgroundColor = UIColor.green
+            view.backgroundColor = UIColor.blue
             
             myLabelChallenge.text = "You hit it more than 15 Times!"
         }
