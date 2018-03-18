@@ -17,8 +17,9 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
 
-    print(topTextField.text!)
-    print(bottomTextField.text!)
+    var sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
+        
+        myLabelChallenge.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)"
         
         
         /*
