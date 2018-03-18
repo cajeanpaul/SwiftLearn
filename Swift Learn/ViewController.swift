@@ -9,13 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-var buttonCount = 0
+//var buttonCount = 0
     @IBOutlet weak var myLabelChallenge: UILabel!
+    @IBOutlet weak var topTextField: UITextField!
+    @IBOutlet weak var bottomTextField: UITextField!
     
     
     @IBAction func buttonTapped(_ sender: Any) {
+
+    print(topTextField.text!)
+    print(bottomTextField.text!)
         
-        buttonCount = buttonCount + 1
+        
+        /*
+        buttonCount += 1
         
         print(buttonCount)
         
@@ -29,6 +36,7 @@ var buttonCount = 0
             
             myLabelChallenge.text = "You hit it more than 15 Times!"
         }
+ */
     }
     
     override func viewDidLoad() {
