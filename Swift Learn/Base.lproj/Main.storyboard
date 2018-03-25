@@ -49,6 +49,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c1n-9l-OeN">
+                                <rect key="frame" x="163" y="154" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -59,11 +62,14 @@
                             <constraint firstItem="qAe-uv-8Ky" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Upe-Ie-OqI"/>
                             <constraint firstItem="ZbS-ug-rAy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ghZ-LC-UpR"/>
                             <constraint firstItem="Bti-Ju-D7g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tIj-nj-5Wk"/>
+                            <constraint firstItem="ZbS-ug-rAy" firstAttribute="top" secondItem="c1n-9l-OeN" secondAttribute="bottom" constant="25" id="x6v-5K-jJv"/>
+                            <constraint firstItem="c1n-9l-OeN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zDe-A3-Njf"/>
                             <constraint firstItem="ofh-sG-50m" firstAttribute="top" secondItem="qAe-uv-8Ky" secondAttribute="bottom" constant="20" id="zOF-tR-7A3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="c1n-9l-OeN" id="c36-KN-qhv"/>
                         <outlet property="bottomTextField" destination="Bti-Ju-D7g" id="5kb-g3-Fge"/>
                         <outlet property="myLabelChallenge" destination="qAe-uv-8Ky" id="Yz3-tP-Kbc"/>
                         <outlet property="topTextField" destination="ZbS-ug-rAy" id="ku9-oI-TRL"/>
